@@ -1,4 +1,3 @@
-
 /**
  * Login Class
  */
@@ -32,7 +31,6 @@ Login.prototype.login = function(_name, _email) {
 	var sessionId = new Date().getTime();
 	this.sessionMap[sessionId] = { name: _name, email: _email } 
 	
-	console.log('new session id ' + sessionId + ' for login::' + _email);
 	
 	return sessionId;
 };
